@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn làm bánh Croissant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #8B4513;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #A0522D;
+            margin-top: 30px;
+            border-bottom: 2px solid #DEB887;
+            padding-bottom: 5px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .ingredients {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .step {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .step-number {
+            background: #DEB887;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+        .tips {
+            background: #FFF8DC;
+            padding: 15px;
+            border-left: 4px solid #DEB887;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hướng dẫn làm bánh Croissant tại nhà</h1>
+    
+    <div class="section">
+        <h2>Nguyên liệu cần chuẩn bị</h2>
+        <div class="ingredients">
+            <div>Bột mì đa dụng: 500g</div>
+            <div>Men khô: 10g</div>
+            <div>Đường: 50g</div>
+            <div>Muối: 10g</div>
+            <div>Sữa tươi: 250ml</div>
+            <div>Bơ nhạt: 250g</div>
+            <div>Trứng gà: 1 quả</div>
+            <div>Nước ấm: 50ml</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Các bước thực hiện</h2>
+        
+        <div class="step">
+            <div class="step-number">1</div>
+                <img src="./1.jpg" alt="">
+            <div>
+                <strong>Trộn bột:</strong> Trộn đều bột mì, men, đường và muối. Thêm sữa tươi và nước ấm, nhào đến khi bột mịn không dính tay.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+                <img src="./2.jpg" alt="">
+            <div>
+                <strong>Ủ bột:</strong> Để bột nghỉ 1-2 giờ ở nơi ấm áp cho đến khi bột nở gấp đôi.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+                <img src="./3.jpg" alt="">
+            <div>
+                <strong>Cán bột và gói bơ:</strong> Cán bột thành hình chữ nhật, đặt bơ vào giữa và gập bột lại để bọc kín bơ.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+                <img src="./4.jpg" alt="">
+            <div>
+                <strong>Tạo hình:</strong> Cán bột mỏng, cắt thành hình tam giác và cuộn lại từ đáy lên đỉnh để tạo hình croissant.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+                <img src="./5.jpg" alt="">
+<div>
+                <strong>Ủ lần 2:</strong> Xếp bánh lên khay, để nghỉ thêm 30-40 phút cho bột nở.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+<img src="./6.jpg" alt="">            <div>
+                <strong>Nướng bánh:</strong> Quét trứng lên mặt bánh và nướng ở 190°C trong 15-20 phút đến khi vàng giòn.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Mẹo nhỏ</h2>
+        <div class="tips">
+            <p>• Bơ nên để ở nhiệt độ phòng trước khi sử dụng</p>
+            <p>• Không nhào bột quá kỹ sau khi cho bơ vào</p>
+            <p>• Nhiệt độ phòng không nên quá nóng khi ủ bột</p>
+            <p>• Có thể để bánh nguội hoàn toàn trước khi thưởng thức</p>
+        </div>
+    </div>
+
+    <script>
+      
+        document.querySelectorAll('.step-image').forEach((img, index) => {
+            const stepImages = [
+                <img src="./1.jpg" alt="">
+                <img src="./2.jpg" alt="">
+                <img src="./3.jpg" alt="">
+                <img src="./4.jpg" alt="">
+                <img src="./5.jpg" alt="">
+                <img src="./6.jpg" alt="">
+            ];
+            
+            img.innerHTML = <img src="${stepImages[index]}" alt="Bước ${index + 1}" style="width:50%; height:50%; border-radius:5px;">;
+        });
+    </script>
+
+
+
+</body>
+</html>
